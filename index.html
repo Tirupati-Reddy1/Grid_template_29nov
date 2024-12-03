@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md {
+            display: grid;
+            height: 200px;
+            width: 50vw;
+            border: 2px solid black;
+            padding: 10px;
+            grid-template-areas:
+                "item1 item2 item3"
+                "item4 item6 item6"
+                "item5 item6 item6";
+            margin: auto;
+            text-align: center;
+            gap: 10px;
+            
+        }
+        .md div{
+            border-radius: 5px;
+        }
+
+        .item1 {
+            background-color: blue;
+            grid-area: item1;
+
+        }
+
+        .item2 {
+            background-color: green;
+            grid-area: item2;
+
+        }
+
+        .item3 {
+            background-color: yellow;
+            grid-area: item3;
+
+        }
+
+        .item4 {
+            background-color: violet;
+            grid-area: item4;
+
+        }
+
+        .item5 {
+            background-color: red;
+            grid-area: item5;
+
+        }
+
+        .item6 {
+            background-color: darkolivegreen;
+            grid-area: item6;
+
+        }
+
+        .second {
+            border: 2px solid;
+            height: 50vh;
+            padding: 10px;
+            display: grid;
+            width: 50%;
+            position: relative;
+            top: 30px;
+            margin: auto;
+            grid-template-columns: repeat(45, 1fr);
+
+
+
+
+
+
+
+        }
+
+        .a {
+            background-color: darkmagenta;
+            grid-column: 1/10;
+            grid-row: 1/2;
+
+
+        }
+
+        .b {
+            background-color: gray;
+            grid-column: 10/25;
+            grid-row: 1/2;
+
+
+        }
+
+        .c {
+            background-color: orange;
+            grid-column: 25/30;
+            grid-row: 1/2;
+
+        }
+
+        .d {
+            background-color: pink;
+            grid-column: 30/35;
+            grid-row: 1/4;
+
+        }
+
+        .e {
+            background-color: red;
+            grid-column: 35/43;
+            grid-row: 1/4;
+
+
+        }
+
+        .f {
+            background-color: chartreuse;
+            grid-column: 43/45;
+            grid-row: 1/4;
+        }
+
+        .g {
+            background-color: brown;
+            grid-column: 1/10;
+            grid-row: 2/4;
+
+        }
+
+        .h {
+            background-color: crimson;
+            grid-column: 10/30;
+            grid-row: 2/4;
+        }
+        .third{
+            display: grid;
+            border: 2px solid;
+            position: relative;
+            top: 50px;
+            height: 200px;
+            width: 50vw;
+            margin: auto;
+            grid-template-areas: 
+            "box1 box2 box2 box3"
+            "box1 box4 box5 box6"
+            "box1 box7 box8 box6";
+            gap: 10px;
+            text-align: center;
+
+            
+
+        }
+        .third div{
+            border-radius: 10px;
+        }
+        .div1{
+            background-color: yellow;
+            grid-area: box1;
+
+        }
+        .div2{
+            background-color: red;
+            grid-area: box2;
+            
+        }
+        .div3{
+            background-color: violet;
+            grid-area: box3;
+            
+        }
+        .div4{
+            background-color:brown;
+            grid-area: box4;
+            
+        }
+        .div5{
+            background-color: orange;
+            grid-area: box5;
+            
+        }
+        .div6{
+            background-color: blueviolet;
+            grid-area: box6;
+            
+        }
+        .div7{
+            background-color: pink;
+            grid-column: box7;
+            
+        }
+        .div8{
+            background-color: green;
+            grid-area: box8;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="md">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item5">Item5</div>
+        <div class="item6">Item6</div>
+    </div>
+    <div class="second">
+        <div class="a"> </div>
+        <div class="b"> </div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+
+
+
+    </div>
+    <div class="third">
+
+
+        <div class="div1"> 1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </div>
+</body>
+
+</html>
